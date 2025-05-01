@@ -259,9 +259,9 @@ body {
   font-family: var(--primary-font);
   background-color: var(--color-blue);
   background-image: url(../img/Mask\ Group@2x.jpg);
-  background-size: 40%;
+  background-size: 45%;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right -50px;
 }
 
 .container {
@@ -274,6 +274,12 @@ body {
 header.main-header {
   display: flex;
   align-items: center;
+  gap: 148px;
+  margin-bottom: 70px;
+}
+
+nav.main-menu {
+  width: 100%;
 }
 
 nav.main-menu ul {
@@ -283,8 +289,6 @@ nav.main-menu ul {
   justify-content: space-between;
   list-style: none;
   gap: 56px;
-  padding-left: 148px;
-  width: 100%;
 }
 
 nav.main-menu ul li a {
@@ -300,4 +304,81 @@ nav.main-menu ul li a:hover {
 nav.main-menu ul li a.contact-button {
   background-color: var(--color-blue);
   padding: 10px 20px;
+}
+
+nav.main-menu ul li a.contact-button:hover {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+  text-decoration: none;
+}
+
+nav.main-menu ul li:last-child {
+  margin-left: auto;
+}
+
+section.hero {
+  max-width: 50%;
+  margin-bottom: 60px;
+}
+
+p.hero-gretting {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1.hero-title {
+  color: var(--color-white);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 80px;
+  margin: 0;
+}
+
+p.hero-subtitle {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 400px;
+  margin-bottom: 50px;
+}
+
+a.hero-button {
+  color: var(--color-black);
+  text-decoration: none;
+  background-color: var(--color-white);
+  padding: 15px 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+section.categories {
+  width: 80%;
+
+  display: flex;
+  background-color: var(--color-white);
+  padding: 20px 90px;
+  gap: 80px;
+  transform: translateX(-140px);
+}
+
+article.category {
+  max-width: 300px;
+}
+
+article.category img {
+  font-size: 64px;
+}
+
+article.category h3 {
+  font-size: 16px;
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+article.category p {
+  font-size: 16px;
+  color: var(--color-gray);
+  font-weight: 400px;
 }
